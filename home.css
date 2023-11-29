@@ -383,6 +383,7 @@ a {
   width: 90%;
   margin-inline: auto;
   gap: 37px;
+  margin-block: 50px;
 }
 .card {
   display: flex;
@@ -390,6 +391,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  border: none;
 }
 .card button {
   display: flex;
@@ -426,11 +428,84 @@ a {
   font-weight: 400;
   line-height: 21px; /* 116.667% */
 }
+.strape {
+  background: #ffc52d;
+  width: 100%;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 38px;
+}
+
+.cont p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 180px;
+}
+.deri button {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 200% */
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid#000;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deri {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+.r2 {
+  display: none;
+}
+.mobilebrand {
+  display: flex;
+  gap: 17px;
+  margin-block: 40px;
+}
+span {
+  color: #9747ff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 @media (min-width: 992px) {
+  .mobilebrand {
+    display: none;
+  }
+  .deri {
+    justify-content: flex-start;
+  }
+  .strape {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .cards {
     flex-direction: row;
     justify-content: space-between;
+    margin-block: 50px;
   }
 
   .navmobile {
@@ -485,6 +560,7 @@ a {
     align-items: center;
     gap: 20px;
   }
+
   .bluenav p {
     flex-grow: 6;
     display: flex;
